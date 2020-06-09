@@ -24,7 +24,7 @@ For now, only below fields are exported:
 - Instantaneous voltage L1 in V resolution
 - Instantaneous voltage L2 in V resolution
 - Instantaneous voltage L3 in V resolution
-- In stantaneous active power L1 (+P)in W resolution
+- Instantaneous active power L1 (+P)in W resolution
 - Instantaneous active power L2 (+P)in W resolution
 - Instantaneous active power L3 (+P)in W resolution
 - Instantaneous active power L1 (-P)in W resolution
