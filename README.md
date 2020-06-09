@@ -20,16 +20,16 @@ For now, only below fields are exported:
 - Meter Reading electricity delivered to client (Tariff 2) in 0,001 kWh
 - Meter Reading electricity delivered by client (Tariff 1) in 0,001 kWh
 - Meter Reading electricity delivered by client (Tariff 2) in 0,001 kWh
-Gas meter reading in m3
-Instantaneous voltage L1 in V resolution
-Instantaneous voltage L2 in V resolution
-Instantaneous voltage L3 in V resolution
-Instantaneous active power L1 (+P)in W resolution
-Instantaneous active power L2 (+P)in W resolution
-Instantaneous active power L3 (+P)in W resolution
-Instantaneous active power L1 (-P)in W resolution
-Instantaneous active power L2 (-P)in W resolution
-Instantaneous active power L3 (-P)in W resolution
+- Gas meter reading in m3
+- Instantaneous voltage L1 in V resolution
+- Instantaneous voltage L2 in V resolution
+- Instantaneous voltage L3 in V resolution
+- In stantaneous active power L1 (+P)in W resolution
+- Instantaneous active power L2 (+P)in W resolution
+- Instantaneous active power L3 (+P)in W resolution
+- Instantaneous active power L1 (-P)in W resolution
+- Instantaneous active power L2 (-P)in W resolution
+- Instantaneous active power L3 (-P)in W resolution
 
 For the OID's of these values, please refer to the ESMR 5.0 document.
 
