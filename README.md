@@ -12,22 +12,28 @@ The only things that can be configured with an environment var is:
 
 Lines are processed as they come in, no checksums are handled.
 
-For now, only a few fields are exported: 
+For now, only below fields are exported:
 
-- power used in tariff 1 in Wh
-- power used in tariff 2 in Wh
-- current power draw in W
-- gas used in cm2, updated hourly
+- Actual electricity power delivered (+P) in 1 Watt resolution
+- Actual electricity power received (-P) in 1 Watt resolution
+- Meter Reading electricity delivered to client (Tariff 1) in 0,001 kWh
+- Meter Reading electricity delivered to client (Tariff 2) in 0,001 kWh
+- Meter Reading electricity delivered by client (Tariff 1) in 0,001 kWh
+- Meter Reading electricity delivered by client (Tariff 2) in 0,001 kWh
+Gas meter reading in m3
+Instantaneous voltage L1 in V resolution
+Instantaneous voltage L2 in V resolution
+Instantaneous voltage L3 in V resolution
+Instantaneous active power L1 (+P)in W resolution
+Instantaneous active power L2 (+P)in W resolution
+Instantaneous active power L3 (+P)in W resolution
+Instantaneous active power L1 (-P)in W resolution
+Instantaneous active power L2 (-P)in W resolution
+Instantaneous active power L3 (-P)in W resolution
 
-These values come from the following oids:
-
-- 1-0:1.8.1 (meter reading, tariff 1 in kWh)
-- 1-0:2.8.2 (meter reading, tariff 2 in kWh)
-- 1-0:1.7.0 (Actual power delivered in kW)
-- 0-1:24.2.1 (gas meter reading, includes timestamp of reading)
+For the OID's of these values, please refer to the ESMR 5.0 document.
 
 ## sources and acknowledgements
 
-This repo for providing me with a direction: https://github.com/marceldegraaf/smartmeter  
-This document for providing me with a overview of how p1 works: http://files.domoticaforum.eu/uploads/Smartmetering/DSMR%20v4.0%20final%20P1.pdf  
-This page (Dutch) for a quick overview of how to use cu to get an example reading: https://infi.nl/nieuws/hobbyproject-slimme-meterkast-met-raspberry-pi/
+This repo for providing me with the first version: https://github.com/gnur/prometheus-p1-exporter
+This document for ESMR 5.0 format: https://www.netbeheernederland.nl/_upload/Files/Slimme_meter_15_a727fce1f1.pdf
